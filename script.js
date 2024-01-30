@@ -3,7 +3,8 @@ submit.addEventListener("click", (evt) => calAge(evt));
 
 
 const calAge = (evt) => {
-    console.log('hello')
+    evt.preventDefault();
+    
     let day = document.querySelector(".day input");
     let mon = document.querySelector(".month input");
     let year = document.querySelector(".year input");
