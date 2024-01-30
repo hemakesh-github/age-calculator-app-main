@@ -37,8 +37,9 @@ const calAge = (evt) => {
     let dobYear = Number(year.value);
 
     let currDate = new Date();
-    let currDay = currDate.getDay();
-    let currMon = currDate.getMonth();
+    let currDay = currDate.getDate();
+    let currMon = currDate.getMonth()+1;
+    console.log(currMon,currDay);
     let currYear = currDate.getFullYear();
     console.log(dobDay);
     if(dobDay<0 || dobDay > 31 || isNaN( dobDay)){

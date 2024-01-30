@@ -1,6 +1,5 @@
 *{
-    font-family: 'Poppins', sans-serif;
-    
+    font-family: 'Poppins', sans-serif;   
 }
 html{
     height: 100%;
@@ -47,7 +46,6 @@ body{
     display: flex;
     flex-direction: column;
     width: 25%;
-    
 }
 
 input{
