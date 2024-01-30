@@ -1,0 +1,136 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    
+}
+html{
+    height: 100%;
+}
+body{
+    background-color: hsl(0, 0%, 94%);
+    height: 100%;
+    font-size: 16px;
+}
+
+.container{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    box-shadow: 10px 10px  hsla(0, 1%, 44%, 0.474);
+    height:fit-content;
+    background-color: hsl(0, 0%, 100%);
+    padding: 3.5%;
+    border-radius: 10px 10px 150px 10px;
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.input{
+    display: flex;
+    gap: 10px;
+    color: hsl(0, 1%, 44%);
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    padding-bottom: 5%;
+    border-bottom:2px solid hsl(0, 0%, 86%) ;
+    justify-content: left;
+}
+
+.input div{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    
+}
+
+input{
+    caret-color: hsl(259, 100%, 65%);
+    width: 80%;
+    padding: 0.5rem;
+    font-size: 32px;
+    border-radius: 5px;
+    margin-top: 5px;
+    outline: none;
+    border: 1px solid hsl(0, 0%, 86%);
+}
+
+
+input:focus{
+    outline: 0px;
+    border: 1.5px solid hsl(259, 100%, 65%);
+}
+
+
+.submit{
+    position: relative;
+    background-color:  hsl(259, 100%, 65%);
+    border-radius: 50%;
+    border: transparent;
+    padding: 20px;
+    object-fit: contain;
+    left: 82%;
+    bottom: 40px;
+    cursor: pointer;
+}
+
+.results{
+    padding: 6.5% 0px 0px 0px;
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: 800;
+    position: relative;
+    bottom: 50px;
+}
+
+.results span{
+    color:hsl(259, 100%, 65%);
+}
+
+.error{
+    color: hsl(0, 100%, 67%);
+    font-style: italic;
+    font-size: 12px;
+    letter-spacing: normal;
+    margin-top: 5px;
+}
+
+.submit:hover{
+    background-color:hsl(0, 0%, 8%);
+}
+
+@media (max-width: 800px){
+    .container{
+        width: 90%;
+    }
+
+    .results{
+        font-size: 3rem;
+    }
+
+    .submit{
+        
+        padding: 10px;
+        left: 40%;
+        bottom: 30px;
+       
+    }
+
+    .input{
+        padding-bottom: 40px;
+    }
+
+    input{
+        font-size: 25px;
+    }
+
+    .input div{
+        width: 100%;
+    }
+}
